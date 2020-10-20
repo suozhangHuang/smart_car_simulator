@@ -202,20 +202,17 @@
    这一类只包括<font color="red">2. 舵机自由前轮+同速平行双后轮（阿克曼转向）</font>结构的小车。
    这一种小车通过控制前轮舵机来控制前进方向，但是必须要前进才能够体现出前进方向的改变。或者可以认为，这种小车能够绕行的旋转轴不在小车范围内。更具体地可以认为这类小车的转弯半径有最小值。
 
-   $$
-   \begin{aligned}
-   & R = \sqrt{\frac{DL}{tan\theta}+\frac{D^2}{4}-L^2} \\
-   & \theta = arctan(\frac{4DL}{4R^2+4L^2-D^2})
-   \end{aligned}
-   $$
-   
+    <center>
+    <img src="https://latex.codecogs.com/gif.latex?\begin{aligned}&space;&&space;R&space;=&space;\sqrt{\frac{DL}{tan\theta}&plus;\frac{D^2}{4}-L^2}&space;\\&space;&&space;\theta&space;=&space;arctan(\frac{4DL}{4R^2&plus;4L^2-D^2})&space;\end{aligned}" title="\begin{aligned} & R = \sqrt{\frac{DL}{tan\theta}+\frac{D^2}{4}-L^2} \\ & \theta = arctan(\frac{4DL}{4R^2+4L^2-D^2}) \end{aligned}" />
+    </center>
+
    公式中R为后轮中心的转弯半径，$\theta$为阿克曼转向角，即前轮在转向时的夹角，D为轮距，L为轴距。
 
-2. **能够原地转向，但是不能任意方向移动（2自由度）**
+1. **能够原地转向，但是不能任意方向移动（2自由度）**
    这一类包括了<font color="red">1. 万向轮前轮+独立平行双后轮</font>，<font color="red">3. 独立平行双履带</font>，<font color="red">5. 双独立平行轮（自平衡车）</font>以及<font color="red">6. 自由全向轮前轮+独立平行双后轮四类小车</font>。
    这类小车都能够设置平行轮之间的速度差，从而绕小车范围内特定轴旋转。更具体地可以认为这类小车具有任意的转弯半径（绕平行轮中点）。
 
-3. **能够原地转向，并且能够任意方向移动（3自由度）**
+2. **能够原地转向，并且能够任意方向移动（3自由度）**
    这一类只包括<font color="red">4. 四个麦克纳姆轮结构的小车</font>一种结构。
    这类小车对角线上的两个轮子可以产生平行的力，而相邻的两个轮子产生的力相互垂直，因此可以控制小车在任意方向上受力，从而驱动小车向任意方向移动。
    同时在对角线上的两个轮子上产生的力不共线，因此可以产生任意竖直轴进行旋转。
